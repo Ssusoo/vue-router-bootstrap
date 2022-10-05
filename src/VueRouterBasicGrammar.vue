@@ -7,8 +7,7 @@
 				"DetailComponent.vue를 보여주세요"라는 코드를 짤 수 있다.
 
 		TODO v-router 설치
-			1) brew install npm
-			2) npm install vue-router@4(vue 3버전이랑 호환되는 게 라우터4인듯)
+			1) yarn add vue-router@4(vue 3버전이랑 호환되는 게 라우터4인듯)
 			3) npm run serve(뷰 페이지 미리보기)
 			4) main.js에서 라우터 세팅하기
 				4-1) 다량의 라우터를 main.js에 세팅하기 보다
