@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './_1/VueRouterGrammar.vue'
 
 createApp(App).mount('#app')
