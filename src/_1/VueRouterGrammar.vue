@@ -6,7 +6,7 @@
 		TODO 1) 라우트를 여러 개 만들 고 싶을 때(src/router/router.js에서 '설명')
 		TODO 2) 페이지 이동 링크를 만들고 싶을 때(src/router/router.js에서 '설명')
 		TODO 3) 글 목록 컴포넌트 페이지 만들기(src/component/PostListComponent.vue)
-		TODO 4) Json 파일 만들기 (/assets/PostList.js
+		TODO 4) Json 파일 만들기 (/assets/PostList.js)
 -->
 <template>
 	<!-- nav bar -->
@@ -52,13 +52,16 @@
 		<p>Vue로 만듦</p>
 	</div>
 	<PostListComponent
-		lists: list
+		:list="lists[i]"
+		v-for="(list, i) in lists"
+		:key="list"
 	/>
 </template>
 
 <script>
 import PostListComponent from '@/_1/components/PostListComponent'
 import PostListData from '@/assets/postList'
+
 export default {
 	name: 'VueRouterGrammar',
 	components: {
@@ -66,7 +69,7 @@ export default {
 	},
 	data() {
 		return {
-			list: PostListData,
+			lists: PostListData,
 		}
 	},
 }

@@ -1,4 +1,10 @@
 // TODO PostList Json Add
+/*
+    TODO Tip
+        복잡한 데이터는 시작 문자를 통해 알 수 있다.
+        export default의 시작이 '[]' 이면 데이터 타입은 'Array'이다.
+        export default의 시작이 '{}' 이면 데이터 타입은 'Object'이다.
+*/
 export default [
     {
         title : '첫 째 프로젝트 : 허위매물 전문 부동산 앱',
@@ -18,4 +24,4 @@ export default [
         date : 'April 24, 2019',
         number : 2
     }
-]
+];

@@ -1,7 +1,8 @@
 <template>
-	<div v-for="(list, i) in lists" :key="i">
+	<div>
 		<h5>{{ list.title }}</h5>
 		<p>{{ list.content }}</p>
+		<p>{{ list.date }}</p>
 	</div>
 </template>
 
@@ -9,7 +10,7 @@
 export default {
 	name: 'PostListComponent',
 	props: {
-		lists: Object,
+		list: Object,
 	},
 }
 </script>
