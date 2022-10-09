@@ -22,3 +22,23 @@
         </template>
 */
 
+// TODO 5) 뷰-라우터(세팅1) 파일 만들기(./router/router.js)
+import { createWebHistory, createRouter } from "vue-router";
+import PostListComponent from "@/_1/components/PostListComponent";
+
+const routes = [
+    {
+        path: "/postList",              // 사용자가 이 경로로 들어오면
+        component: PostListComponent,   // 이 컴포넌트로 보여주세요.
+    },
+    {
+        path: '',
+    }
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
+
+export default router;

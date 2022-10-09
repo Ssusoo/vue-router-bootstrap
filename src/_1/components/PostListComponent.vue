@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<h5>{{ list.title }}</h5>
-		<p>{{ list.content }}</p>
-		<p>{{ list.date }}</p>
+		<h5>{{ postList.title }}</h5>
+		<p>{{ postList.content }}</p>
+		<p>{{ postList.date }}</p>
 	</div>
 </template>
 
@@ -10,7 +10,7 @@
 export default {
 	name: 'PostListComponent',
 	props: {
-		list: Object,
+		postList: Object,
 	},
 }
 </script>

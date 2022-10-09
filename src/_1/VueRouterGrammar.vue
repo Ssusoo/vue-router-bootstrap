@@ -3,10 +3,16 @@
 		TODO Grammar 설명
 			뷰-라우터 설치 및 라우트 라우터 설명(VueRouterBasicGrammar)
 			뷰 라우터 기본법(라우트 path 설정 및 template 태그에 페이지 이동 링크 설정 / router)
-		TODO 1) 라우트를 여러 개 만들 고 싶을 때(src/router/router.js에서 '설명')
-		TODO 2) 페이지 이동 링크를 만들고 싶을 때(src/router/router.js에서 '설명')
-		TODO 3) 글 목록 컴포넌트 페이지 만들기(src/component/PostListComponent.vue)
-		TODO 4) Json 파일 만들기 (/assets/PostList.js)
+		TODO 1) 라우트를 여러 개 만들 고 싶을 때(./router/router.js에서 '설명')
+		TODO 2) 페이지 이동 링크를 만들고 싶을 때(./router/router.js에서 '설명')
+		TODO 3) 글 목록 컴포넌트 페이지 만들기(./component/PostListComponent.vue)
+		TODO 4) Json 파일 만들기 (./assets/PostList.js)
+		TODO 5) 뷰-라우터(세팅1) 파일 만들기(./router/router.js)
+		TODO 6) 뷰-라우터(세팅2) main.js에서 뷰-라우터 import 세팅하기(./main.js)
+		TODO 7) 뷰-라우터(세팅3) 보여줄 곳을 <router-view />)로 표시하기
+			=> PostListComponent를 예전처럼 세팅하는 게 아니라
+			=> <router-view />로만 해서 보여줄 수 있음.
+			=> 기존에 PostListComponent는 제거하기
 -->
 <template>
 	<!-- nav bar -->
@@ -51,25 +57,28 @@
 		<h5>Vue Bootstrap</h5>
 		<p>Vue로 만듦</p>
 	</div>
-	<PostListComponent
-		:list="lists[i]"
-		v-for="(list, i) in lists"
-		:key="list"
+
+	<!-- TODO 7) 뷰-라우터(세팅3) 보여줄 곳을 <router-view)로 표시하기 -->
+	<router-view
+			:postList="postLists[i]"
+			v-for="(list, i) in postLists"
+			:key="list"
 	/>
+
 </template>
 
 <script>
-import PostListComponent from '@/_1/components/PostListComponent'
-import PostListData from '@/assets/postList'
+import PostListData from '@/assets/jsons/postList'
+import RoomListData from '@/assets/jsons/roomList'
 
 export default {
 	name: 'VueRouterGrammar',
 	components: {
-		PostListComponent,
 	},
 	data() {
 		return {
-			lists: PostListData,
+			postLists: PostListData,
+			roomLists: RoomListData,
 		}
 	},
 }

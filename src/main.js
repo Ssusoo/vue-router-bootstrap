@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
 import App from './_1/VueRouterGrammar.vue'
+import CustomRouter from './router/router'
 
-createApp(App).mount('#app')
+// TODO 기본
+// createApp(App).mount('#app')
+
+// TODO 6) 뷰-라우터(세팅2) main.js에서 뷰-라우터 import 세팅하기(./main.js)
+createApp(App).use(CustomRouter).mount('#app')
+
