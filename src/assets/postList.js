@@ -16,5 +16,5 @@ export default [
         date : 'April 24, 2019',
         number : 2
     }
-]
+];
 
