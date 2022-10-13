@@ -13,6 +13,7 @@
 			=> PostListComponent를 예전처럼 세팅하는 게 아니라
 			=> <router-view />로만 해서 보여줄 수 있음.
 			=> 기존에 PostListComponent는 제거하기
+		TODO 8) 뷰-라우터(세팅3) /roomList(직빵 복습)
 -->
 <template>
 	<!-- nav bar -->

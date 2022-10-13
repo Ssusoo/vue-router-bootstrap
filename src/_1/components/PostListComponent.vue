@@ -1,3 +1,4 @@
+<!-- TODO 7) 뷰-라우터(세팅3) 보여줄 곳을 <router-view /> /postList)로 표시하기 -->
 <template>
 	<div v-for="post in postList" :key="post">
 		<h5>{{ post.title }}</h5>
