@@ -25,6 +25,8 @@
 // TODO 5) 뷰-라우터(세팅1) 파일 만들기(./router/router.js)
 import { createWebHistory, createRouter } from "vue-router";
 import PostListComponent from "@/_1/components/PostListComponent";
+import RoomListComponent from "@/_1/components/RoomListComponent"
+import HomeComponent from "@/_1/components/HomeComponent"
 
 const routes = [
     {
@@ -32,10 +34,14 @@ const routes = [
         component: PostListComponent,   // 이 컴포넌트로 보여주세요.
     },
     {
-        path: '',
+        path: '/roomList',
+        component: RoomListComponent,
+    },
+    {
+        path: '/',
+        component: HomeComponent,
     }
 ];
-
 const router = createRouter({
     history: createWebHistory(),
     routes,

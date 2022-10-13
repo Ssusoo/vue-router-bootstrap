@@ -53,11 +53,6 @@
 		</div>
 	</nav>
 
-	<div class="main-title">
-		<h5>Vue Bootstrap</h5>
-		<p>Vue로 만듦</p>
-	</div>
-
 	<!-- TODO 7) 뷰-라우터(세팅3) 보여줄 곳을 <router-view)로 표시하기 -->
 	<router-view
 			:postList="postLists[i]"
