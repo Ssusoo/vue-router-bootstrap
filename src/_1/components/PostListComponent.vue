@@ -1,8 +1,8 @@
 <template>
-	<div>
-		<h5>{{ postList.title }}</h5>
-		<p>{{ postList.content }}</p>
-		<p>{{ postList.date }}</p>
+	<div v-for="post in postList" :key="post">
+		<h5>{{ post.title }}</h5>
+		<p>{{ post.content }}</p>
+		<p>{{ post.date }}</p>
 	</div>
 </template>
 
@@ -10,7 +10,7 @@
 export default {
 	name: 'PostListComponent',
 	props: {
-		postList: Object,
+		postList: Array,
 	},
 }
 </script>

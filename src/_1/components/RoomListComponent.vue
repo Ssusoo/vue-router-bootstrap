@@ -3,9 +3,9 @@
 -->
 
 <template>
-	<div>
+	<div v-for="room in roomList" :key="room">
 		<h5>상품 번호 : {{ room.id }}번</h5>
-		<img :src="room.image">
+		<img :src="room.image" class="room-img">
 		<h4>{{ room.title }}</h4>
 		<p>{{ room.content }}</p>
 		<p>{{ room.price }}원</p>
@@ -16,7 +16,7 @@
 export default {
 	name: 'RoomListComponent',
 	props: {
-		room: Object,
+		roomList: Array,
 	},
 }
 </script>

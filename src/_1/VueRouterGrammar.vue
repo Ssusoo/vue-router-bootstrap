@@ -18,17 +18,17 @@
 	<!-- nav bar -->
 	<nav class="navbar navbar-expand-lg bg-blue">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="/">Navbar</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link active" aria-current="page" href="/roomList">Room</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="/postList">Post</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,12 +54,11 @@
 	</nav>
 
 	<!-- TODO 7) 뷰-라우터(세팅3) 보여줄 곳을 <router-view)로 표시하기 -->
+	<!-- TODO props에 데이터만 넘겨주기-->
 	<router-view
-			:postList="postLists[i]"
-			v-for="(list, i) in postLists"
-			:key="list"
+		:postList="postLists"
+		:roomList="roomLists"
 	/>
-
 </template>
 
 <script>
@@ -89,5 +88,10 @@ div {
 .main-title {
 	margin-top: 20px;
 	text-align: center;
+}
+.room-img {
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
 }
 </style>
