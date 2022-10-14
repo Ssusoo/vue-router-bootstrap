@@ -14,6 +14,11 @@
 			=> <router-view />로만 해서 보여줄 수 있음.
 			=> 기존에 PostListComponent는 제거하기
 		TODO 8) 뷰-라우터(세팅3) /roomList(직빵 복습)
+		TODO 9) router-link : 다른 페이지 이동 링크 만들 때 사용함.
+			a 태그를 만든다고 생각하면 됨.
+			*router-link 사용방법(to="경로")
+				<router-link to="/list">a 태그처럼</router-link>
+
 -->
 <template>
 	<!-- nav bar -->
@@ -60,6 +65,10 @@
 		:postList="postLists"
 		:roomList="roomLists"
 	/>
+
+	<!-- TODO 9) router-link : 다른 페이지 이동 링크 만들 때 사용함. -->
+	<router-link to="/roomList">a 태그처럼</router-link>
+	<router-link to="/home">home 태그처럼</router-link>
 </template>
 
 <script>

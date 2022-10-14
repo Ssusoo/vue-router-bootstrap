@@ -38,7 +38,7 @@ const routes = [
         component: Room,
     },
     {
-        path: '/',
+        path: '/home',
         component: Home,
     }
 ];
