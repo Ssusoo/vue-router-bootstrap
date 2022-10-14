@@ -54,8 +54,8 @@
 		</div>
 	</nav>
 
-	<!-- TODO 7) 뷰-라우터(세팅3) 보여줄 곳을 <router-view)로 표시하기 -->
-	<!-- TODO props에 데이터만 넘겨주기-->
+	<!-- TODO 7) 뷰-라우터(세팅3) 보여줄 곳을 <router-view>)로 표시하기 -->
+	<!-- TODO props에 데이터만 넘겨줄 때 router-view로 설정 -->
 	<router-view
 		:postList="postLists"
 		:roomList="roomLists"
