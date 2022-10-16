@@ -5,6 +5,7 @@
 		<h4>일련번호 : {{ postList[$route.params.id].number }}번</h4>
 		<p>{{ postList[$route.params.id].title }}</p>
 		<p>{{ postList[$route.params.id].content }}</p>
+		<p>{{ postList[$route.params.id].date }}</p>
 	</div>
 </template>
 
