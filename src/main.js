@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './_1/VueRouterGrammar.vue'
+import App from './_2/VueRouterDetail.vue'
 import CustomRouter from './router/router'
 
 // TODO 기본

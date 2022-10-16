@@ -23,10 +23,11 @@
 */
 
 // TODO 5) 뷰-라우터(세팅1) 파일 만들기(./router/router.js)
-import { createWebHistory, createRouter } from "vue-router";
-import Post from "@/_1/components/PostListComponent";
-import Room from "@/_1/components/RoomListComponent"
-import Home from "@/_1/components/HomeComponent"
+import { createWebHistory, createRouter } from 'vue-router';
+import Post from '@/_1/components/PostListComponent';
+import Room from '@/_1/components/RoomListComponent';
+import Home from '@/_1/components/HomeComponent';
+import Detail from '@/_2/components/PostDetailComponent';
 
 const routes = [
     {
@@ -40,6 +41,12 @@ const routes = [
     {
         path: '/home',
         component: Home,
+    },
+    // TODO _2 뷰-라우터 상세 페이지(2) router.js에서 /deteail URL 추가하기)
+    // TODO 3) /detail/:id 콜론 문법 사용하기
+    {
+        path: '/detail/:id',
+        component: Detail,
     }
 ];
 const router = createRouter({
