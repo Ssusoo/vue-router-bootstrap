@@ -43,7 +43,7 @@ const routes = [
         component: Home,
     },
     // TODO _2 뷰-라우터 상세 페이지(2) router.js에서 /deteail URL 추가하기)
-    // TODO 3) /detail/:id 콜론 문법 사용하기
+    // TODO 3) /detail/:id 콜론 문법으로 뷰-라우터 사용하기
     {
         path: '/detail/:id',
         component: Detail,
