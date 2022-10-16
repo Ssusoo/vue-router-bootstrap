@@ -63,7 +63,6 @@
 	<!-- TODO props에 데이터만 넘겨줄 때 router-view로 설정 -->
 	<router-view
 		:postList="postLists"
-		:roomList="roomLists"
 	/>
 
 	<!-- TODO 9) router-link : 다른 페이지 이동 링크 만들 때 사용함. -->
