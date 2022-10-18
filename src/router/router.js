@@ -28,6 +28,8 @@ import Post from '@/_1/components/PostListComponent';
 import Room from '@/_1/components/RoomListComponent';
 import Home from '@/_1/components/HomeComponent';
 import Detail from '@/_2/components/PostDetailComponent';
+import Comment from '@/_3/components/CommentComponent';
+import Author from '@/_3/components/AuthorComponent';
 
 const routes = [
     {
@@ -47,7 +49,19 @@ const routes = [
     {
         path: '/detail/:id',
         component: Detail,
-    }
+        // TODO 1) nested routes 만들기(/router/router.js)
+        children: [
+            {
+                // TODO * /author(절대경로)이 아니라 author(상대경로)로
+                path: "author",
+                component: Author,
+            },
+            {
+                path: "comment",
+                component: Comment,
+            }
+        ],
+    },
 ];
 const router = createRouter({
     history: createWebHistory(),

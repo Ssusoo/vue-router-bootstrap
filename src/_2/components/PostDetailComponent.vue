@@ -6,6 +6,8 @@
 		<p>{{ postList[$route.params.id].title }}</p>
 		<p>{{ postList[$route.params.id].content }}</p>
 		<p>{{ postList[$route.params.id].date }}</p>
+		<!-- TODO 2) 등록된 nested routes를 어디서 보여줄지 정하기(_2/components/PostDetailComponent) -->
+		<router-view />
 	</div>
 </template>
 
