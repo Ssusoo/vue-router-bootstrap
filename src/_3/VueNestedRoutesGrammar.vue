@@ -9,4 +9,8 @@
 		1) nested routes 만들기(/router/router.js)
 		2) 등록된 nested routes를 어디서 보여줄지 정하기(_2/components/PostDetailComponent)
 		3) 글 제목을 누르면 detail 페이지로 이동하기(_1/components/PostListComponent)
+
+		TODO $route와 $router
+			1) $route는 현재경로
+			2) $router는 페이지 이동관련 기능
 -->
